@@ -4,7 +4,7 @@ import { AiFillHome, AiOutlineSearch, AiOutlineHeatMap } from 'react-icons/ai'
 export default function Navbar() {
     return (
         <nav className="nav">
-            <Link href="/home">
+            <Link href="/">
                 <AiFillHome />Home
             </Link>
             <Link href="/search">
