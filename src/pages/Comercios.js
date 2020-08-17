@@ -1,28 +1,36 @@
 import React, { useEffect, useState } from "react";
 import CardItem from 'components/CardItem'
 import { ComercioData } from 'data/ComercioData.js'
+import FormHome from "components/FormHome";
 export default function Comercios({ params }) {
+
   const [loading, setloading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setloading(true);
-    }, 1000);
+    }, 500);
   }, []);
+
+
+  // const deleteSpaceString = string => {
+  //   return string.replace(/ /g, "")
+  // }
+
   return (
     <section>
-      <div className="title"> {decodeURI(params.title)}</div>
+      <FormHome title={params.title} />
       <section>
         {loading ? (
           <section className="list_grid">
             {ComercioData.map((comercio) => (
               <CardItem
-                href={"/comercio/" + comercio.name}
+                href={"/comercio/" + decodeURI(comercio.name)}
                 image={comercio.image}
                 title={comercio.name}
                 categoria={comercio.categoria}
                 distancia={comercio.distancia}
-                valoracion={comercio.valoracion}
+                calificacion={comercio.calificacion}
                 key={comercio.id}
               />
             ))}

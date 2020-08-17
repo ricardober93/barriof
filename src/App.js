@@ -5,8 +5,7 @@ import Navbar from 'components/Navbar'
 import { routes } from 'routes'
 function App() {
   return (
-    <div>
-
+    <>
       <Navbar />
       <Switch>
         {
@@ -15,7 +14,7 @@ function App() {
           ))
         }
       </Switch>
-    </div>
+    </>
   );
 }
 
