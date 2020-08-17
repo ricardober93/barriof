@@ -1,0 +1,83 @@
+.comercio {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.comercio_header {
+  height: 200px;
+  background-image: url(http://lorempixel.com/1080/1080/food/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.comercio_header_nav {
+  position: sticky;
+  height: 40px;
+  padding: 25px 12px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  color: #383a3e;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.comercio_header_nav svg:last-child {
+  margin-left: 12px;
+}
+
+section {
+  padding: 15px 30px;
+}
+
+section div.avatar {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  margin: 0;
+  margin-top: -20px;
+}
+
+section div.avatar img {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: -20px;
+  border-radius: 50px;
+  border: 5px solid white;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_comercio {
+  margin: 0;
+}
+
+.title_categoria p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #828282;
+}
+
+.calificacion span {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #828282;
+}
+
+.calificacion span::before {
+  content: "\2605";
+  color: goldenrod;
+  font-size: 16px;
+}

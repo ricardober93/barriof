@@ -1,0 +1,117 @@
+.list {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1.2em;
+}
+
+.list_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_title h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #343e3d;
+}
+
+.list_title button {
+  font-size: 0.8em;
+  font-weight: 800;
+  color: #ff9a76;
+  background-color: transparent;
+  border: none;
+}
+
+.list_grid {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.list_grid .card {
+  max-width: 120px;
+  color: #343e3d;
+  text-decoration: none;
+}
+
+.list_grid .card img {
+  max-width: 120px;
+}
+
+.list_grid .card .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list_grid .card .title h5 {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.card_title h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card_categoria p {
+  margin: 0;
+  font-size: 14px;
+}
+.card_valoracion span {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card_valoracion span.star::before {
+  content: "\2605";
+  color: goldenrod;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 815px) {
+  .list_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 500px;
+    overflow: scroll;
+  }
+  .list_grid .card {
+    max-width: 150px;
+  }
+
+  .list_grid .card img {
+    max-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .list_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .list_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  .list_grid .card {
+    max-width: 200px;
+  }
+
+  .list_grid .card img {
+    max-width: 200px;
+  }
+}
