@@ -20,7 +20,7 @@ export default function Comercios({ params }) {
   return (
     <section>
       <FormHome title={params.title} />
-      <section>
+      <section className="comercios">
         {loading ? (
           <section className="list_grid">
             {ComercioData.map((comercio) => (
