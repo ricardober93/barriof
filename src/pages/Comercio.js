@@ -1,9 +1,11 @@
 import React from 'react'
 import { AiOutlineArrowLeft, AiFillHeart, AiOutlineShareAlt } from 'react-icons/ai'
+import { FaShippingFast, FaMoneyCheckAlt } from "react-icons/fa";
 import {ComercioSingleData} from 'data/ComercioSingleData'
 import 'styles/comercio.css'
+import Resenias from 'components/Resenias';
+import WhatsappButton from 'components/WhatsappButton';
 export default function Comercio({ params }) {
-    console.log(params)
     return (
         <section className="comercio">
             <header className="comercio_header">
@@ -15,7 +17,7 @@ export default function Comercio({ params }) {
                     </div>
                 </nav>
             </header>
-            <section>
+            <section className="servicos_comercio">
                 <div className="avatar">
                     <img src={ComercioSingleData.image_url} alt=""/>
                 </div>
@@ -31,14 +33,18 @@ export default function Comercio({ params }) {
                         <span>{ComercioSingleData.calificacion}</span>
                     </div>
                     <div className="servicios">
-                        <span>envios</span>
-                        <span>pagos online</span>
+                        <FaShippingFast />
+                        <FaMoneyCheckAlt />
                     </div>
                     <div className="descripcion">
                         <p>{ ComercioSingleData.descripcion}</p>
                     </div>
                 </div>
-                </section>
+            </section>
+            <section className="grid">
+            <Resenias />
+            </section>
+            <WhatsappButton />
         </section>
     )
 }
