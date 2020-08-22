@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
+import { Link } from 'wouter'
 export default function FormHome({ title }) {
     return (
         <header className="header">
@@ -7,7 +8,7 @@ export default function FormHome({ title }) {
                 {!title ? (
                     <>
                         logo.BarrioChat
-            <AiOutlineUser />
+            <Link href="/profile"><AiOutlineUser /></Link>
                     </>
                 ) : (
                         decodeURI(title)

@@ -40,7 +40,7 @@ nav a > svg {
 }
 
 .header_brand {
-  padding: 0.6em;
+  padding: 0.6em 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
