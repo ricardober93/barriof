@@ -2,11 +2,19 @@
 #ffeadb secundary
 #f7c5a8 complementary */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  height: 100vh;
+}
+
+.MapView,
+#root,
+.leaflet-container {
+  height: 100%;
 }
 
 .nav {
@@ -27,7 +35,7 @@ body {
   font-size: 1.1em;
 }
 
-nav a > svg {
+nav a>svg {
   margin-right: 0.4em;
   font-size: 1.3em;
 }
@@ -47,7 +55,7 @@ nav a > svg {
   font-size: 1.3em;
 }
 
-.header_brand > svg {
+.header_brand>svg {
   color: #ff9a76;
   font-size: 1.4em;
 }
@@ -65,7 +73,7 @@ nav a > svg {
   color: #343e3d;
 }
 
-.header_form > input {
+.header_form>input {
   padding: 0.1em;
   margin: 0 0.6em;
   font-size: 0.6em;
