@@ -18,7 +18,7 @@ export default function Comercios({ params }) {
   // }
 
   return (
-    <section>
+    <div>
       <FormHome title={params.title} />
       <section className="comercios">
         {loading ? (
@@ -39,6 +39,6 @@ export default function Comercios({ params }) {
             "esperando ..."
           )}
       </section>
-    </section>
+    </div>
   );
 }

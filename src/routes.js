@@ -1,10 +1,10 @@
 import Home from 'pages/Home'
 import Search from 'pages/Search'
-import Map from 'pages/Map'
+import MapPage from 'pages/MapPage'
 import Comercios from 'pages/Comercios'
 import Comercio from 'pages/Comercio'
-export const routes = [
-    {
+import Profile from 'pages/Profile'
+export const routes = [{
         path: "/",
         component: Home
     },
@@ -14,7 +14,7 @@ export const routes = [
     },
     {
         path: "/map",
-        component: Map
+        component: MapPage
     },
     {
         path: "/comercios/:title",
@@ -23,5 +23,9 @@ export const routes = [
     {
         path: "/comercio/:title",
         component: Comercio
+    },
+    {
+        path: "/profile",
+        component: Profile
     }
 ]
